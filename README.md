@@ -7,8 +7,9 @@ Reconnaissance --> scanning --> Exploitation --> Post Exploitation ( maintaining
 
 ## Websites
 
-* [exploit-db](http://www.exploit-db.com)
-* [netcraft](http://netcraft.com)S
+* [exploit-db](http://www.exploit-db.com) 
+* [netcraft](http://netcraft.com)
+* [https://www.robtex.com/](https://www.robtex.com/) "swiss army knife internet tool" a one-stop shop for information gathering
 
 ## Google Dorking
 
@@ -31,13 +32,27 @@ Reconnaissance --> scanning --> Exploitation --> Post Exploitation ( maintaining
 * SamuraiWTF
 * Backtrack
 
-
 ## Victim Operating Systems
 * [Metasploitable](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/) A linux distro  
 * Windows XP - Because LOL
 
 
-## Tools
+# Tools
+
+## DNS
+* `nslookup` --> `server <ip address>` --> `type all`
+* `dig@<ipaddress> -t AXFR`
+* `fierce -dns codecreations.net`
+
+
+## Data Extraction
+### metagoofil
+run `metagoofil -d codecreations.net -t pdf,doc,xls,pptx -l 75 -n 100 -o results -f results.html`
+
+This will put the results in the folder results.
+
+
+
 ### theHarvester
 Finds emails and servers
 
